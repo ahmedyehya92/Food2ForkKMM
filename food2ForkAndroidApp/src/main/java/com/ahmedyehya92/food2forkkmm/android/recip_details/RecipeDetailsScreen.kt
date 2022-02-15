@@ -6,12 +6,11 @@ import androidx.compose.runtime.Composable
 @Composable
 fun RecipeDetailsScreen(
     recipeId: Int?,
-    lazyName: String?,
 )
 {
     if(recipeId == null){
         Text(text = "ERROR")
     } else {
-        Text(text = "RecipeDetailsScreen: $lazyName $recipeId")
+        Text(text = "RecipeDetailsScreen: $recipeId")
     }
 }
